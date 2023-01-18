@@ -1,0 +1,289 @@
+/*  == Global == */
+body {
+    background-image: url(../images/fond\ de\ site.jpg);
+    background-color: #07184C;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.allcontainer {
+    max-width: 900px;
+    max-height: 100vh;
+    margin: 0 auto;
+}
+
+/*  == Header == */
+.header {
+    position: relative;
+}
+
+.header_main-menu {
+    display: flex;
+    position: absolute;
+    max-width: 800px;
+    bottom: 9px;
+    left: 20%;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+.header_main-menu-item {
+    padding-right: 10px;
+}
+
+.header_main-menu-search {
+    width: 20%;
+    max-width: 100px;
+    max-height: 20px;
+}
+
+.header_main-menu-search_button {
+    max-width: 18px;
+    height: 21px;
+    font-size: 10px;
+    padding-left: 0;
+    font-weight: 700;
+    color: #07184C;
+}
+
+.header_main-menu-item:hover {
+    color: yellow;
+}
+
+/* == Main == */
+
+/* = Nav = */
+.main-nav_container {
+    position: absolute;
+    width: 155px;
+    max-height: 888px;
+    margin: -2px auto;
+    background-color: #5093AD;
+}
+
+.main-nav_first-section {
+    display: flex;
+    background-color: #206680;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.main-nav_second-section {
+    font-weight: 700;
+    font-size: 11px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+}
+
+.main-nav_second-section:hover {
+    color:#FFF;
+    font-weight: 900;
+}
+
+.main-nav_partner {
+    text-align: center;
+}
+
+.main-nav_partner a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav_partner:hover {
+    text-decoration: underline;
+}
+
+.main-nav_bottom-img {
+    margin-top: 4px;
+    margin-bottom: -2px;
+}
+
+
+.main-content {
+    padding-left: 160px;
+    background-color: #fff;
+}
+
+/* = Corps de page = */
+.main-content_intro {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.main-content_title {
+    color: #CC3333;
+    font-size: 1rem;
+    padding: 25px 0;
+    font-weight: bold;
+}
+
+.main-content_description {
+    font-size: .8rem;
+    margin-bottom: 30px;
+}
+
+.main-content_game-detail {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-content_game-detail-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+.main-content_game-detail-left-img2 {
+    max-width: 200px;
+    max-height: 200px;
+}
+.main-content_game-detail-left-link {
+    font-size: .6rem;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.main-content_game-detail-left-link a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-content_game-detail-left-addtocart {
+    padding: 11px 25px;;
+}
+
+.main-content_game-detail-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content_game-detail-right-us {
+    padding-left: 131px;
+}
+
+.main-content_game-detail-right-japon {
+    padding-left: 130px;
+}
+
+.main-content_rubrics-img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 18px;
+}
+
+.main-content_rubrics-more {
+    margin: 5px auto 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.main-content_rubrics-more a {
+    font-family: arial;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-content_rubrics-more a:hover {
+    text-decoration: underline;
+}
+
+.main-content_content-intro-title {
+    font-family: arial;
+    font-weight: 700;
+    color: #0066CC;
+    font-size: 13px;
+    text-align: center;
+}
+
+.main-content_content-intro-text {
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.main-content_content-title {
+    padding-bottom: 20px;
+    color:#cc3333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main-content_content-text {
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.main-content_content strong {
+    font-weight: 700;
+}
+
+.main-content_content-important {
+    font-weight: 700;
+    color: red;
+}
+.main-content_content a {
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 700;
+}
+.main-content_content li {
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.main-content_content-img {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+}
+
+/* == Footer == */
+footer {
+    position: relative;
+}
+
+.footer_copyright {
+    background-image: url(../images/footer\ cointranchants.png);
+    background-color: #fff;
+    max-width: 900px;
+    height: 20px;
+    text-align: center;
+    font-size: .8rem;
+    padding: 15px 0;
+}
+
+.footer_rss {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.footer_rss img {
+    padding: 10px 4px;
+}
+
+.popup_up {
+    position: absolute;
+    background-image: url(../images/mog_up.png);
+    width: 30px;
+    height: 30px;
+    bottom: 60px;
+    right: 20px;
+}
+
+.popup_up:hover {
+    background-image: url(../images/mog_up\ \(1\).png);
+    width: 30px;
+    height: 30px;
+}
