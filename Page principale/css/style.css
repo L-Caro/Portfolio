@@ -47,3 +47,124 @@
   }
 
   /* == Menu dark mode == */
+/* = Div avec le texte et curseur */
+  .darkMode {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+  }
+ .darkMode :last-child {
+    font-weight: 700;
+}
+  .themeSwitcher {
+	display: inline-block;
+	position: relative;
+	width: 4.5rem;
+	height: 2.5rem;
+	cursor: pointer;                            /* Met un pointer quand on passe sur la checkbox */
+	overflow: hidden;                           /* Cache la checkbox quand elle est hors champ */
+}
+/* = Checkbox = */
+.themeSwitcher input {
+	position: absolute;
+	top: -30px;                                 /* Met la checkbox hors champ */
+	left: -30px;                                /* Met la checkbox hors champ */
+	width: 0;                                   /* Taille de la checkbox nulle */
+	height: 0;                                  /* Taille de la checkbox nulle */
+}
+
+.themeSwitcher input + span {
+   position: absolute;
+   top: 0;
+   bottom: 0;                                   /*  */
+   left: 0;
+   right: 0;
+   background: #99b4df;                       /* Couleur du switch quand inactif (theme clair) */
+   border-radius: 20px;
+}
+.themeSwitcher input:checked + span {
+	background: #346abf;                      /* Couleur du switch quand actif (theme sombre)*/
+}
+
+/* = insertion du curseur et position en clair = */
+.themeSwitcher input + span:before {
+	content: "";                                /* Contenu vide */
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: .3rem;                                  /* position à gauche (theme clair)*/
+	width: 2rem;
+	height: 2rem;
+	background: white;                        /* Fond du curseur*/
+	border-radius: 50%;                         /* rend le curseur rond */
+	transform: translateY(-50%);                /* Change la position du curseur pour être dans le switch */
+	transition: all .5s;                        /* transition d'un coté à l'autre en 0.5sec */
+}
+/* = Curseur se déplace au clic en mode sombre = */
+.themeSwitcher input:checked + span:before {
+	left: 34px;                                 /* position à droite (theme sombre) */
+}
+
+/* == Header == */
+header {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {      /* Jusqu'à 768px */
+    .darkMode {
+        display: none;                      /* Menu theme clair/sombre caché*/
+    }
+}
+
+@media screen and (min-width: 768px) {      /* A partir de 768px */
+    .burger-icon {
+        display: none;                      /* Cache le menu burger*/
+    }    
+    .sidenav {
+        width: 0px;                         /*  Permet de ne plus voir le menu caché lors de l'agrandissement de l'écran */
+    }
+}
