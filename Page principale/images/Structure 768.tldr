@@ -1952,8 +1952,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 1,
             "point": [
-              597.76,
-              -164.04
+              616.38,
+              -151.62
             ],
             "size": [
               4825.62,
@@ -2068,8 +2068,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 7,
             "point": [
-              4930.98,
-              -129.18
+              896.81,
+              -138.49
             ],
             "size": [
               431.61,
@@ -2096,8 +2096,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 8,
             "point": [
-              5047.89,
-              -109.07
+              964.07,
+              -112.17
             ],
             "rotation": 0,
             "text": "Logo twitter/Linkedin/mail",
@@ -2118,8 +2118,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 9,
             "point": [
-              792.1,
-              131.83
+              1235.86,
+              110.11
             ],
             "size": [
               765,
@@ -2174,8 +2174,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 11,
             "point": [
-              4522.86,
-              49.48
+              640.75,
+              33.96
             ],
             "size": [
               316,
@@ -2202,8 +2202,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 12,
             "point": [
-              4544.11,
-              95.31
+              680.62,
+              67.38
             ],
             "rotation": 0,
             "text": "Présentation\n(parcours / formation)",
@@ -2224,8 +2224,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 22,
             "point": [
-              4378.73,
-              -122.35
+              664.19,
+              -94.42
             ],
             "rotation": 0,
             "text": "Portfolio de L-Caro",
@@ -2246,8 +2246,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 23,
             "point": [
-              680.56,
-              -107.5
+              4134.43,
+              -85.78
             ],
             "size": [
               116,
@@ -2330,9 +2330,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 46,
             "point": [
-              4483.698563767948,
-              -46.86111717535147,
-              0.5
+              744.34,
+              -31.35
             ],
             "rotation": 0,
             "bend": 0.000034853983549448435,
@@ -2387,8 +2386,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 10,
             "point": [
-              1668.8,
-              127.97
+              2112.56,
+              106.25
             ],
             "size": [
               765,
@@ -2415,8 +2414,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 11,
             "point": [
-              2512.39,
-              128.52
+              2956.15,
+              106.8
             ],
             "size": [
               765,
@@ -2443,8 +2442,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 12,
             "point": [
-              3362.6,
-              129.07
+              3806.36,
+              107.35
             ],
             "size": [
               765,
@@ -2471,8 +2470,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 47,
             "point": [
-              983.2544081971222,
-              307.107672551351
+              1427.01,
+              285.39
             ],
             "rotation": 0,
             "text": "Projet 1",
@@ -2493,8 +2492,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 48,
             "point": [
-              1848.42,
-              296.62
+              2292.18,
+              274.9
             ],
             "rotation": 0,
             "text": "Projet 2",
@@ -2515,8 +2514,8 @@
             "parentId": "ed958c33-95b7-4950-272c-e7da6b2e56b7",
             "childIndex": 49,
             "point": [
-              1715.23,
-              408.63
+              2158.99,
+              386.91
             ],
             "rotation": 0,
             "text": "Les tuiles projets descendent au clic\n \nUn fond d'écran sombre sur chaque projet\ncelui en hover s'eclaire plus \net un text d'explication des éléments utilisés s'affiche en transparence",

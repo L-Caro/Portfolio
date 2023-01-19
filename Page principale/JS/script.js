@@ -19,7 +19,18 @@ function closeNav() {
 document.getElementById("switchTheme").addEventListener("change", function() {
   if (document.getElementById("switchTheme").checked == false) {
     document.documentElement.setAttribute("style", "background-color: #121212;");
-    document.getElementsByTagName("body")[0].setAttribute("style", "color: #fefee2;");
+    document.getElementsByTagName("body")[0].setAttribute("style", "color: #c7c7c7;");
+
+  } else {
+    document.documentElement.setAttribute("style", "background-color: white;");
+    document.getElementsByTagName("body")[0].setAttribute("style", "color: black;");
+  }
+});
+
+document.getElementById("switchTheme2").addEventListener("change", function() {
+  if (document.getElementById("switchTheme2").checked == false) {
+    document.documentElement.setAttribute("style", "background-color: #121212;");
+    document.getElementsByTagName("body")[0].setAttribute("style", "color: #c7c7c7;");
 
   } else {
     document.documentElement.setAttribute("style", "background-color: white;");

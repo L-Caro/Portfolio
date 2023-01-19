@@ -105,20 +105,37 @@ body {
 }
 /* == Header == */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid #f1f1f1;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
 }
-
+.header-small {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-large {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 header h1 {
   font-weight: 800;
   font-size: 1rem;
   text-align: center;
+  padding: 2rem 0;
 }
-.header__titles {
-  display: none;
+.header-large h1 {
+  width: 20%;
+}
+.header-small h1 {
+  width: 50%;
+}
+
+.header-large__titles {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  width: 60%;
 }
 
 
@@ -147,24 +164,27 @@ p {
 
 
 @media screen and (max-width: 767px) {      /* Jusqu'à 768px */
-
+  .header-large {
+    display: none;
+  }
 } 
 
 @media screen and (min-width: 768px) {      /* A partir de 768px */
 
   /* == menu burger == */
-    .sidenav li {
+  .header-small {
+    display: none;
+  }
+    /* .sidenav li {
       display: none;
     }
     .burger-icon span {
       position: absolute;
       top: -100px;
       left:-100px;
-  }
+  } */
   /* == header == */
 .header__titles {
   display: flex;
   justify-content: space-between;
-}
-
 }
