@@ -1,17 +1,23 @@
-/* == Menu burger == */
+              /* == Menu burger == */
 /* = Menu burger = */
 .sidenav {
     height: 100vh;                      /* Prend toute la hauteur */
     width: 100vw;                       /* Prend toute la largeur */
     position: fixed;                    /* Menu fixed */
-    z-index: 1;                         /* Menu par dessus tout le reste */
+    z-index: 2;                         /* Menu par dessus tout le reste */
     top: 0;                             /* Menu tout en haut */
     left: -100vw;                       /* Menu caché par défaut */
     background-color: #e8e8e8;        important; /* Changer la couleur quand elle sera trouvé */ 
-    padding-top: 5%;                    /* 5% de padding par rapport au top */
+    padding-top: 10%;                    /* 5% de padding par rapport au top */
     transition: left 1.5s ease;         /* Transition de 1.5s avec ralentissement au début et à la fin */
   }
-  
+  /* = position centré des titres = */
+  .sidenav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
   /* = Liens du menu burger = */
   .sidenav a {
     padding: .5rem .5rem .5rem 2rem;
@@ -20,16 +26,13 @@
     display: block;
     transition: 1s;                     /* Apparition du menu en 1sec */
   }
-  
   .sidenav a:hover {
     color: #111;
   }
-  
   /* = Position du menu ouvert = */
   .sidenav.active {
     left: 0;
   }
-  
   /* = Bouton de fermeture = */
   .sidenav .close {
     position: absolute;
@@ -42,160 +45,68 @@
     display: block;
     width: 2.5rem;
     height: .4rem;
-    background-color: black;
+    background-color: rgb(199, 29, 29);
     margin: 20% 1%;
   }
 
-
-
-  /* == Menu dark mode == */
-/* = Div avec le texte et curseur */
-  .darkMode {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 1rem;
+              /* == Menu dark mode == */
+  /* Fond du switch */
+   .switch {
+    font-size: 1rem;                                                  /* Hauteur du switch */
+    position: relative;                                               /* Le laisse ou le display flex l'a prévu */
+    width: 4.5em;
+    height: 2.5em;
   }
- .darkMode :last-child {
-    font-weight: 700;
-}
-  .themeSwitcher {
-	display: inline-block;
-	position: relative;
-	width: 4.5rem;
-	height: 2.5rem;
-	cursor: pointer;                            /* Met un pointer quand on passe sur la checkbox */
-	overflow: hidden;                           /* Cache la checkbox quand elle est hors champ */
-}
-/* = Checkbox = */
-.themeSwitcher input {
-	position: absolute;
-	top: -30px;                                 /* Met la checkbox hors champ */
-	left: -30px;                                /* Met la checkbox hors champ */
-	width: 0;                                   /* Taille de la checkbox nulle */
-	height: 0;                                  /* Taille de la checkbox nulle */
-}
-
-.themeSwitcher input + span {
-   position: absolute;
-   top: 0;
-   bottom: 0;                                   /*  */
-   left: 0;
-   right: 0;
-   background: #99b4df;                       /* Couleur du switch quand inactif (theme clair) */
-   border-radius: 20px;
-}
-.themeSwitcher input:checked + span {
-	background: #346abf;                      /* Couleur du switch quand actif (theme sombre)*/
-}
-
-/* = insertion du curseur et position en clair = */
-.themeSwitcher input + span:before {
-	content: "";                                /* Contenu vide */
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: .3rem;                                  /* position à gauche (theme clair)*/
-	width: 2rem;
-	height: 2rem;
-	background: white;                        /* Fond du curseur*/
-	border-radius: 50%;                         /* rend le curseur rond */
-	transform: translateY(-50%);                /* Change la position du curseur pour être dans le switch */
-	transition: all .5s;                        /* transition d'un coté à l'autre en 0.5sec */
-}
-/* = Curseur se déplace au clic en mode sombre = */
-.themeSwitcher input:checked + span:before {
-	left: 34px;                                 /* position à droite (theme sombre) */
-}
-
-
+  /* cacher checkbox de base */
+  .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    /* Le switch */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color:  #212121;                                   /* Fond du switch en mode sombre*/
+      transition: 2s;                                                 /* Temps pour que le fond change de couleur */
+      border-radius: 30px;
+      box-shadow: 0px 0px 10px 4px #EAEAEA;                         /* Effet d'ombrage en mode sombre */
+    }
+    /* Switch position gauche (sombre) */
+    .slider:before {
+      position: absolute;                                             /* Position absolue de son parent, le switch */
+      content: "";
+      height: 1.8em;
+      width: 1.8em;
+      border-radius: 50%;
+      left: 10%;                                                      /* Position dans le parent, le switch */
+      bottom: 15%;
+      box-shadow: inset 8px -4px 0px 0px #fff000;                   /* Dessin et couleur de la lune en position sombre */
+      background-color: #212121;                                    /* Couleur de la partie non lune */
+      transition: .5s;                                                /* Temps pour changer de coté */
+      
+    }
+    input:checked + .slider {
+      box-shadow: 0px 0px 10px 4px #777777;                         /* Effet d'ombrage en mode clair */
+      background-color: rgb(240, 240, 240);                         /* Fond du switch en mode clair */
+    }  
+    input:checked + .slider:before {
+      transform: translateX(100%);                                    /* Active la translation quand bouton check */
+      box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et couleur de la lune en position clair */
+    } 
 
 /* == Header == */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     border-bottom: 1px solid #f1f1f1;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
-
-
-/* TEST nouveau dark mode*/
-/* The switch - the box around the slider */
-/* .switch {
-  font-size: 1rem;
-  position: relative;
-  display: inline-block;
-  width: 3.5em;
-  height: 2em;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color:  #212121;
-  transition: .5s;
-  border-radius: 30px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.4em;
-  width: 1.4em;
-  border-radius: 50%;
-  left: 10%;
-  bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #fff000;
-  background-color: #212121;
-  transition: .5s;
-}
-
-input:checked + .slider {
-  background-color: #f1f1f1;
-}
-
-input:checked + .slider:before {
-  transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #fff000;
-} */
-/*  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -214,14 +125,26 @@ input:checked + .slider:before {
 
 
 @media screen and (max-width: 767px) {      /* Jusqu'à 768px */
-    /* .darkMode {
-        display: none;                      /* Menu theme clair/sombre caché*/
-    }
-} */
+  header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  }
+} 
 
 @media screen and (min-width: 768px) {      /* A partir de 768px */
 
     .sidenav {
         width: 0px;                         /*  Permet de ne plus voir le menu caché lors de l'agrandissement de l'écran */
+
+  }
+    .sidenav li {
+      display: none;
     }
+    .burger-icon span {
+      position: absolute;
+      top: -100px;
+      left:-100px;
+  }
+
 }
