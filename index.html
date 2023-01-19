@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/reset-perso.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Portfolio/Page principale/css/reset.css">
+    <link rel="stylesheet" href="../Portfolio/css/reset-perso.css">
+    <link rel="stylesheet" href="../Portfolio/css/style.css">
     <title>Portfolio de L-Caro</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <div class="darkMode">
-                <label class="themeSwitcher" for="themeSwitcher">
-                    <input type="checkbox" name="themeSwitcher" id="themeSwitcher" >
-                    <span></span>
-                </label>
-                <p class="darkMode">Thème<br> sombre</p>
-            </div>
-
-
+              <!-- menu latéral -->
             <label id="mySidenav" class="sidenav">                        <!-- id pour javascript | class pour CSS --> 
                 <a id="closeBtn" href="#" class="close">&times;</a>     <!-- petite croix de fermeture -->
                 <ul>
@@ -30,7 +22,7 @@
                   <li><a href="#">Autres</a></li>
                 </ul>
               </label>
-              
+              <!-- Icone burger -->
               <a href="#" id="openBtn">
                 <span class="burger-icon">
                   <span></span>
@@ -38,10 +30,27 @@
                   <span></span>
                 </span>
               </a>
+            <h1 class="header__main-title">Portfolio de L-Caro</h1>
+            
+            <div class="darkMode">
+                <label class="themeSwitcher" for="themeSwitcher">
+                    <input type="checkbox" name="themeSwitcher" id="themeSwitcher" >
+                    <span></span>
+                </label>
+                <p class="darkMode">Thème<br> sombre</p>
+            </div>
+            <!-- Test nouveau dark mode -->
+            <!-- <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label> -->
+
+
+
            
 
         </header>
 </div>
-<script src="../JS/script.js"></script>
+<script src="../Portfolio/Page principale/JS/script.js"></script>
 </body>
 </html>

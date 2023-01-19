@@ -1,3 +1,4 @@
+// == Menu burger == //
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
@@ -11,3 +12,9 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
+// == == //
+
+
+
+
