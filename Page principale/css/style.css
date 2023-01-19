@@ -6,10 +6,10 @@
     position: fixed;                    /* Menu fixed */
     z-index: 2;                         /* Menu par dessus tout le reste */
     top: 0;                             /* Menu tout en haut */
-    left: -100vw;                       /* Menu caché par défaut */
+    left: -150vw;                       /* Menu caché par défaut */
     background-color: #e8e8e8;        important; /* Changer la couleur quand elle sera trouvé */ 
-    padding-top: 10%;                    /* 5% de padding par rapport au top */
-    transition: left 1.5s ease;         /* Transition de 1.5s avec ralentissement au début et à la fin */
+    padding-top: 6rem;                   /* 5% de padding par rapport au top */
+    transition: left 1.5s ease-out;     /* Transition de 1.5s avec ralentissement à la fin */
   }
   /* = position centré des titres = */
   .sidenav ul {
@@ -24,7 +24,7 @@
     font-size: 2rem;
     color: #cc0808;                   important; /* Changer la couleur quand elle sera trouvé */
     display: block;
-    transition: 1s;                     /* Apparition du menu en 1sec */
+    transition: 1.5s 1.5s;                     /* Apparition du menu en 1sec */
   }
   .sidenav a:hover {
     color: #111;
@@ -45,8 +45,8 @@
     display: block;
     width: 2.5rem;
     height: .4rem;
-    background-color: rgb(199, 29, 29);
-    margin: 20% 1%;
+    background-color: #87e7e1;
+    margin: 10% 1%;
   }
 
               /* == Menu dark mode == */
@@ -99,6 +99,10 @@
       box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et couleur de la lune en position clair */
     } 
 
+/* == Body == */
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
 /* == Header == */
 header {
     display: flex;
@@ -106,6 +110,25 @@ header {
     align-items: center;
     border-bottom: 1px solid #f1f1f1;
     padding: 1rem 2rem;
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: center;
+}
+.header__titles {
+  display: none;
+}
+
+
+/* == main == */
+main {
+  margin: 1rem;
+}
+
+p {
+  text-align: justify;
 }
 
 
@@ -123,21 +146,13 @@ header {
 
 
 
-
 @media screen and (max-width: 767px) {      /* Jusqu'à 768px */
-  header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  }
+
 } 
 
 @media screen and (min-width: 768px) {      /* A partir de 768px */
 
-    .sidenav {
-        width: 0px;                         /*  Permet de ne plus voir le menu caché lors de l'agrandissement de l'écran */
-
-  }
+  /* == menu burger == */
     .sidenav li {
       display: none;
     }
@@ -146,5 +161,10 @@ header {
       top: -100px;
       left:-100px;
   }
+  /* == header == */
+.header__titles {
+  display: flex;
+  justify-content: space-between;
+}
 
 }

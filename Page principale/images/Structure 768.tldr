@@ -16,8 +16,8 @@
             "parentId": "page",
             "childIndex": 1,
             "point": [
-              -361.69,
-              -1738
+              611,
+              103
             ],
             "size": [
               670,
@@ -44,8 +44,8 @@
             "parentId": "page",
             "childIndex": 2,
             "point": [
-              930.07,
-              -1477.1
+              1902.76,
+              363.9
             ],
             "rotation": 0,
             "text": "HTML / CSS",
@@ -66,8 +66,8 @@
             "parentId": "page",
             "childIndex": 3,
             "point": [
-              942.57,
-              -1246.1
+              1915.26,
+              594.9
             ],
             "rotation": 0,
             "text": "Javascript",
@@ -88,8 +88,8 @@
             "parentId": "page",
             "childIndex": 4,
             "point": [
-              945.57,
-              -1110.1
+              1918.26,
+              730.9
             ],
             "rotation": 0,
             "text": "Back end",
@@ -110,8 +110,8 @@
             "parentId": "page",
             "childIndex": 5,
             "point": [
-              -128.19,
-              -1712
+              844.5,
+              129
             ],
             "rotation": 0,
             "text": "Portfolio de L-Caro",
@@ -132,8 +132,8 @@
             "parentId": "page",
             "childIndex": 7,
             "point": [
-              945.57,
-              -933.1
+              1918.26,
+              907.9
             ],
             "rotation": 0,
             "text": "Autres",
@@ -154,8 +154,8 @@
             "parentId": "page",
             "childIndex": 9,
             "point": [
-              884.06,
-              -1643.56
+              1856.75,
+              197.44
             ],
             "size": [
               431.61,
@@ -182,8 +182,8 @@
             "parentId": "page",
             "childIndex": 11,
             "point": [
-              967.86,
-              -1625.65
+              1940.55,
+              215.35
             ],
             "rotation": 0,
             "text": "Logo twitter/Linkedin/mail",
@@ -204,8 +204,8 @@
             "parentId": "page",
             "childIndex": 14,
             "point": [
-              874.31,
-              -1654
+              1847,
+              187
             ],
             "size": [
               445,
@@ -232,8 +232,8 @@
             "parentId": "page",
             "childIndex": 19,
             "point": [
-              -368.69,
-              -1752
+              604,
+              89
             ],
             "size": [
               691,
@@ -260,8 +260,8 @@
             "parentId": "page",
             "childIndex": 20,
             "point": [
-              -170.69,
-              -1626
+              802,
+              215
             ],
             "size": [
               316,
@@ -288,8 +288,8 @@
             "parentId": "page",
             "childIndex": 21,
             "point": [
-              -131.78,
-              -1589
+              840.91,
+              252
             ],
             "rotation": 0,
             "text": "Présentation\n(parcours / formation)",
@@ -310,8 +310,8 @@
             "parentId": "page",
             "childIndex": 22,
             "point": [
-              287.83,
-              -1771
+              1260.52,
+              70
             ],
             "rotation": 0,
             "bend": 0,
@@ -366,8 +366,8 @@
             "parentId": "page",
             "childIndex": 23,
             "point": [
-              340.31,
-              -1822
+              1313,
+              19
             ],
             "rotation": 0,
             "text": "Barre en sticky top 0",
@@ -388,8 +388,8 @@
             "parentId": "page",
             "childIndex": 24,
             "point": [
-              -338.69,
-              -1718
+              634,
+              123
             ],
             "radius": [
               32.5,
@@ -416,8 +416,8 @@
             "parentId": "page",
             "childIndex": 25,
             "point": [
-              -320.69,
-              -1703
+              652,
+              138
             ],
             "rotation": 0,
             "bend": 0,
@@ -470,8 +470,8 @@
             "parentId": "page",
             "childIndex": 26,
             "point": [
-              -318.69,
-              -1691
+              654,
+              150
             ],
             "rotation": 0,
             "bend": 0,
@@ -524,8 +524,8 @@
             "parentId": "page",
             "childIndex": 27,
             "point": [
-              -318.69,
-              -1681
+              654,
+              160
             ],
             "rotation": 0,
             "bend": 0,
@@ -578,8 +578,8 @@
             "parentId": "page",
             "childIndex": 28,
             "point": [
-              -65.69,
-              -1672
+              907,
+              169
             ],
             "rotation": 0,
             "bend": 0,
@@ -632,8 +632,8 @@
             "parentId": "page",
             "childIndex": 29,
             "point": [
-              -44.69,
-              -1674
+              928,
+              167
             ],
             "rotation": 0,
             "bend": 0,
@@ -686,8 +686,8 @@
             "parentId": "page",
             "childIndex": 30,
             "point": [
-              866.31,
-              -1751
+              1839,
+              90
             ],
             "size": [
               670,
@@ -714,8 +714,8 @@
             "parentId": "page",
             "childIndex": 31,
             "point": [
-              1099.81,
-              -1725
+              2072.5,
+              116
             ],
             "rotation": 0,
             "text": "Portfolio de L-Caro",
@@ -736,8 +736,8 @@
             "parentId": "page",
             "childIndex": 32,
             "point": [
-              1389.54,
-              -1732.22
+              2362.23,
+              108.78
             ],
             "size": [
               116,
@@ -764,8 +764,8 @@
             "parentId": "page",
             "childIndex": 33,
             "point": [
-              859.31,
-              -1765
+              1832,
+              76
             ],
             "size": [
               691,
@@ -792,8 +792,8 @@
             "parentId": "page",
             "childIndex": 36,
             "point": [
-              1515.83,
-              -1784
+              2488.52,
+              57
             ],
             "rotation": 0,
             "bend": 0,
@@ -848,8 +848,8 @@
             "parentId": "page",
             "childIndex": 37,
             "point": [
-              1530.23,
-              -1853.96
+              2502.92,
+              -12.96
             ],
             "rotation": 0,
             "text": "Barre en sticky top 0",
@@ -870,8 +870,8 @@
             "parentId": "page",
             "childIndex": 38,
             "point": [
-              889.31,
-              -1731
+              1862,
+              110
             ],
             "radius": [
               32.5,
@@ -898,8 +898,8 @@
             "parentId": "page",
             "childIndex": 39,
             "point": [
-              907.31,
-              -1716
+              1880,
+              125
             ],
             "rotation": 0,
             "bend": 0,
@@ -952,8 +952,8 @@
             "parentId": "page",
             "childIndex": 40,
             "point": [
-              909.31,
-              -1704
+              1882,
+              137
             ],
             "rotation": 0,
             "bend": 0,
@@ -1006,8 +1006,8 @@
             "parentId": "page",
             "childIndex": 41,
             "point": [
-              909.31,
-              -1694
+              1882,
+              147
             ],
             "rotation": 0,
             "bend": 0,
@@ -1060,8 +1060,8 @@
             "parentId": "page",
             "childIndex": 42,
             "point": [
-              1076.57,
-              -1269.1
+              2049.26,
+              571.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1114,8 +1114,8 @@
             "parentId": "page",
             "childIndex": 43,
             "point": [
-              1097.57,
-              -1272.1
+              2070.26,
+              568.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1168,8 +1168,8 @@
             "parentId": "page",
             "childIndex": 44,
             "point": [
-              703.02,
-              -1637.06
+              1675.71,
+              203.94
             ],
             "rotation": 0,
             "text": "Menu burger",
@@ -1190,8 +1190,8 @@
             "parentId": "page",
             "childIndex": 45,
             "point": [
-              775.1,
-              -1697.95
+              1747.79,
+              143.05
             ],
             "rotation": 0,
             "bend": 0.00009777372457638466,
@@ -1247,8 +1247,8 @@
             "parentId": "page",
             "childIndex": 46,
             "point": [
-              927.57,
-              -1237.1
+              1900.26,
+              603.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1301,8 +1301,8 @@
             "parentId": "page",
             "childIndex": 47,
             "point": [
-              938.57,
-              -1134.1
+              1911.26,
+              706.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1355,8 +1355,8 @@
             "parentId": "page",
             "childIndex": 48,
             "point": [
-              939.57,
-              -956.1
+              1912.26,
+              884.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1409,8 +1409,8 @@
             "parentId": "page",
             "childIndex": 43,
             "point": [
-              1065.57,
-              -1161.1
+              2038.26,
+              679.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1463,8 +1463,8 @@
             "parentId": "page",
             "childIndex": 44,
             "point": [
-              1086.57,
-              -1163.1
+              2059.26,
+              677.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1517,8 +1517,8 @@
             "parentId": "page",
             "childIndex": 44,
             "point": [
-              1080.57,
-              -1007.1
+              2053.26,
+              833.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1571,8 +1571,8 @@
             "parentId": "page",
             "childIndex": 45,
             "point": [
-              1101.57,
-              -1009.1
+              2074.26,
+              831.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1625,8 +1625,8 @@
             "parentId": "page",
             "childIndex": 45,
             "point": [
-              1071.57,
-              -781.1
+              2044.26,
+              1059.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1679,8 +1679,8 @@
             "parentId": "page",
             "childIndex": 46,
             "point": [
-              1092.57,
-              -783.1
+              2065.26,
+              1057.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1733,8 +1733,8 @@
             "parentId": "page",
             "childIndex": 49,
             "point": [
-              466.31,
-              -1441
+              1439,
+              400
             ],
             "rotation": 0,
             "text": "Fait descendre \nles autres menus titre \npour afficher les projets du langage",
@@ -1755,8 +1755,8 @@
             "parentId": "page",
             "childIndex": 50,
             "point": [
-              771.57,
-              -1322.1
+              1744.26,
+              518.9
             ],
             "rotation": 0,
             "bend": 0,
@@ -1811,8 +1811,8 @@
             "parentId": "page",
             "childIndex": 51,
             "point": [
-              1043.57,
-              -1390.1
+              2016.26,
+              450.9
             ],
             "rotation": 0,
             "text": "Projet 1\nProjet 2\nProjet 3",
@@ -1833,8 +1833,8 @@
             "parentId": "page",
             "childIndex": 52,
             "point": [
-              -461.69,
-              -1726
+              511,
+              115
             ],
             "rotation": 0,
             "bend": 0,
@@ -1887,8 +1887,8 @@
             "parentId": "page",
             "childIndex": 53,
             "point": [
-              -836.19,
-              -1706
+              136.5,
+              135
             ],
             "rotation": 0,
             "text": "Header :\n- Dark mode (1024+)\n- Burger (768-)\n- Menu langage (1024+)\n- H1 Portfolio\n- div avec logos\n ",
@@ -1898,6 +1898,28 @@
               "isFilled": false,
               "dash": "draw",
               "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          },
+          "783c71c6-b67d-466c-1b8b-735f659d8e93": {
+            "id": "783c71c6-b67d-466c-1b8b-735f659d8e93",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 54,
+            "point": [
+              737.96,
+              695.01
+            ],
+            "rotation": 0,
+            "text": "Fond ecran sombre",
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1.707734299357029,
               "font": "script",
               "textAlign": "middle"
             }
