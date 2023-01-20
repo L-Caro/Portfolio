@@ -1,6 +1,56 @@
+/* == Menu dark mode == */
+/* Fond du switch */
+.switch {
+font-size: 1rem;                                                  /* Hauteur du switch */
+position: relative;                                               /* Le laisse ou le display flex l'a prévu */
+width: 4.5em;
+height: 2.5em;
+}
+/* cacher checkbox de base */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+/* Le switch */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color:  #212121;                                   /* Fond du switch en mode sombre*/
+transition: 2s;                                                 /* Temps pour que le fond change de couleur */
+border-radius: 30px;
+box-shadow: 0px 0px 10px 4px #EAEAEA;                         /* Effet d'ombrage en mode sombre */
+}
+/* Switch position gauche (sombre) */
+.slider:before {
+position: absolute;                                             /* Position absolue de son parent, le switch */
+content: "";
+height: 1.8em;
+width: 1.8em;
+border-radius: 50%;
+left: 10%;                                                      /* Position dans le parent, le switch */
+bottom: 15%;
+box-shadow: inset 8px -4px 0px 0px #fff000;                   /* Dessin et couleur de la lune en position sombre */
+background-color: #212121;                                    /* Couleur de la partie non lune */
+transition: .5s;                                                /* Temps pour changer de coté */
+
+}
+input:checked + .slider {
+box-shadow: 0px 0px 10px 4px #777777;                         /* Effet d'ombrage en mode clair */
+background-color: rgb(240, 240, 240);                         /* Fond du switch en mode clair */
+}  
+input:checked + .slider:before {
+transform: translateX(100%);                                    /* Active la translation quand bouton check */
+box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et couleur de la lune en position clair */
+} 
+
               /* == Menu burger == */
 /* = Menu burger = */
-.sidenav {
+  .sidenav {
     height: 100vh;                      /* Prend toute la hauteur */
     width: 100vw;                       /* Prend toute la largeur */
     position: fixed;                    /* Menu fixed */
@@ -10,7 +60,7 @@
     background-color: #e8e8e8;        important; /* Changer la couleur quand elle sera trouvé */ 
     padding-top: 6rem;                   /* 5% de padding par rapport au top */
     transition: left 1.5s ease-out;     /* Transition de 1.5s avec ralentissement à la fin */
-  }
+}
   /* = position centré des titres = */
   .sidenav ul {
     display: flex;
@@ -25,21 +75,21 @@
     color: #cc0808;                   important; /* Changer la couleur quand elle sera trouvé */
     display: block;
     transition: 1.5s 1.5s;                     /* Apparition du menu en 1sec */
-  }
+}
   .sidenav a:hover {
     color: #111;
-  }
+}
   /* = Position du menu ouvert = */
   .sidenav.active {
     left: 0;
-  }
+}
   /* = Bouton de fermeture = */
   .sidenav .close {
     position: absolute;
     top: 0;
     right: 8%;
     font-size: 4rem;
-  }
+}
   /* = Apparence du bouton burger = */
   .burger-icon span {
     display: block;
@@ -47,104 +97,139 @@
     height: .4rem;
     background-color: #87e7e1;
     margin: 10% 1%;
+}
+
+/* == Menu déroulant == */
+  nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+  nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  nav a {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+  }
+  nav a:hover {
+    color: orange;
+    border-bottom: 2px solid gold;
   }
 
-              /* == Menu dark mode == */
-  /* Fond du switch */
-   .switch {
-    font-size: 1rem;                                                  /* Hauteur du switch */
-    position: relative;                                               /* Le laisse ou le display flex l'a prévu */
-    width: 4.5em;
-    height: 2.5em;
+
+
+  .header-large__sub-menu {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: pink;
+}
+
+ .sub-menu {
+  display: block;
+}
+
+  .header-large__sub-menu li {
+    float: none;
+  width: 100%;
+  text-align: left;
+}
+
+  .header-large__sub-menu a {
+    padding: 10px;
+    border-bottom: non;
   }
-  /* cacher checkbox de base */
-  .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    /* Le switch */
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color:  #212121;                                   /* Fond du switch en mode sombre*/
-      transition: 2s;                                                 /* Temps pour que le fond change de couleur */
-      border-radius: 30px;
-      box-shadow: 0px 0px 10px 4px #EAEAEA;                         /* Effet d'ombrage en mode sombre */
-    }
-    /* Switch position gauche (sombre) */
-    .slider:before {
-      position: absolute;                                             /* Position absolue de son parent, le switch */
-      content: "";
-      height: 1.8em;
-      width: 1.8em;
-      border-radius: 50%;
-      left: 10%;                                                      /* Position dans le parent, le switch */
-      bottom: 15%;
-      box-shadow: inset 8px -4px 0px 0px #fff000;                   /* Dessin et couleur de la lune en position sombre */
-      background-color: #212121;                                    /* Couleur de la partie non lune */
-      transition: .5s;                                                /* Temps pour changer de coté */
-      
-    }
-    input:checked + .slider {
-      box-shadow: 0px 0px 10px 4px #777777;                         /* Effet d'ombrage en mode clair */
-      background-color: rgb(240, 240, 240);                         /* Fond du switch en mode clair */
-    }  
-    input:checked + .slider:before {
-      transform: translateX(100%);                                    /* Active la translation quand bouton check */
-      box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et couleur de la lune en position clair */
-    } 
+
+  .header-large__sub-menu a:hover {
+    border-bottom: none;
+    background-color: #fff000;
+  }
+  
+  .header-large__menu > a::after {
+  content: " ▼";
+  font-size: 12px;
+}
+
+ .header-large__sub-menu {
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  background-color: #cc0808;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+ }
+
+ nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  position: relative;
+ }
+
+
+
+
+
 
 /* == Body == */
-body {
+  body {
   font-family: 'JetBrains Mono', monospace;
 }
 /* == Header == */
-header {
+  header {
     border-bottom: 1px solid #f1f1f1;
-    /* padding: 1rem 2rem; */
+    padding: 0 2rem;
 }
-.header-small {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.header-large {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-header h1 {
+  header h1 {
   font-weight: 800;
   font-size: 1rem;
   text-align: center;
-  padding: 2rem 0;
 }
-.header-large h1 {
-  width: 20%;
+
+.header-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-small h1 {
+    padding: 2rem 0;
   width: 50%;
 }
 
-.header-large__titles {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem 0;
-  width: 60%;
+  .header-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+  .header__Title-and-menu {
+    width: 86vw;
+  }
+  .header-large h1 {
+    letter-spacing: 1em;
+    padding: 1.5rem 0 0 0;
+}
+  .header-large__menus {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+.header-large ul {
+  list-style-type: none;
+}
+
 
 
 /* == main == */
-main {
+  main {
   margin: 1rem;
 }
 
-p {
+  p {
   text-align: justify;
 }
 
