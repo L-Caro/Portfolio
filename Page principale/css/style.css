@@ -100,75 +100,65 @@ box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et coule
 }
 
 /* == Menu déroulant == */
-  nav ul li {
-    float: left;
-    width: 25%;
-    text-align: center;
-  }
-  nav ul::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Liens de la barre de menu*/
   nav a {
-    display: block;
+    display: block;                                     /* Fait en sorte que les liens li du sous menu soient en bloc*/
     text-decoration: none;
-    color: #111;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0;
+    color: #87e7e1;
+    font-weight: 700;
   }
+ /* couleur liens menu en hover */
   nav a:hover {
     color: orange;
     border-bottom: 2px solid gold;
   }
-
-
-
-  .header-large__sub-menu {
-    display: none;
-    box-shadow: 0px 1px 2px #ccc;
-    background-color: pink;
+/* Placement de ▼ à la fin des menus */
+.header-large__menu > a::after {
+  content: " ▼";
+  font-size: 1rem;
 }
 
- .sub-menu {
-  display: block;
-}
 
-  .header-large__sub-menu li {
-    float: none;
-  width: 100%;
-  text-align: left;
+/* Cacher les sous menus par défaut */
+.header-large__sub-menu {
+  display: none;                                    /* Cache les sous menus par défaut */
 }
-
+/* position et placement de la fenetre sous menu */
+nav > ul li:hover .header-large__sub-menu {     
+  display: flex;                                    /* Les sous-menus apparaissent au hover sur le lien */
+  position: absolute;                               /* Pour que les sous menus commencent à gauche */
+  left: 0;                                        
+  /* margin-top: 1.5rem; */                         /* Le temps de parcourir les 1.5rem, le sous menu disparait */
+  width: 100vw;                                     /* Largeur des sous menus (tout l'écran) */
+  height: 90vh;                                     /* Hauteur des sous menus (jusqu'en bas) */
+  background-color: #cc0808;                      /* Couleur d'arriere plan des sous menus */
+}
+/* placement des sous menu */
+.header-large__sub-menu li {
+  display: flex;                                    /* en colonne de 33% pour toute la largeur*/
+  justify-content: space-around;
+  width: 33%;
+}
+/* placement dans chaque sous menu */
   .header-large__sub-menu a {
-    padding: 10px;
-    border-bottom: non;
+    padding: 1rem;                                  /* Largeur à 100% avec leger padding */
+    width: 100%;
+    text-align: center;
   }
-
+/* action quand hover sur fenetre de sous menu */
   .header-large__sub-menu a:hover {
     border-bottom: none;
     background-color: #fff000;
   }
-  
-  .header-large__menu > a::after {
-  content: " ▼";
-  font-size: 12px;
-}
 
- .header-large__sub-menu {
-  display: none;
-  box-shadow: 0px 1px 2px #ccc;
-  background-color: #cc0808;
-  position: absolute;
-  width: 100%;
-  z-index: 5;
- }
+
+
 
  nav ul li {
-  float: left;
-  width: 25%;
-  text-align: center;
-  position: relative;
+  /* float: left; */
+  /* width: 25%; */
+  /* text-align: center; */
+  /* position: relative; */
  }
 
 
