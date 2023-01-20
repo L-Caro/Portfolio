@@ -143,6 +143,7 @@ ul li:hover .sub-menu {
     text-decoration: none;
     color: #87e7e1;
     font-weight: 700;
+    text-shadow: 0px 0px 4px #333;
   }
 
 /* couleur liens sous menu en hover */
@@ -151,7 +152,7 @@ ul li:hover .sub-menu {
  .header-large__sub-menu3 a,
  .header-large__sub-menu4 a {
     color: #EAEAEA;
-    text-shadow: 0px 0px 4px #333;
+    text-shadow: 0px 0px 4px rgb(87, 86, 86);
   }
  /* couleur liens sous menu en hover */
  .header-large__sub-menu1 a:hover,
@@ -229,7 +230,7 @@ ul li:hover .sub-menu {
   .header-large__sub-menu2 a:hover,
   .header-large__sub-menu3 a:hover,
   .header-large__sub-menu4 a:hover {
-    background-color: #fff000;          /* A supprimer quand les projets auront des photos*/
+    background-color: #fff000;          /* A supprimer quand les projets auront des photos*/ important !;
   }
   
 
@@ -291,7 +292,11 @@ ul li:hover .sub-menu {
 
 /* == main == */
   main {
-  margin: 1rem;
+  background-image: url(../images/fond-ecran.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
   p {
@@ -331,8 +336,19 @@ ul li:hover .sub-menu {
     color: white;
     font-weight: 700;
 }
-
-} 
+.project2 {
+  background-image: url(../images/project2/p.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  opacity: .5
+}
+.project2:hover {
+  opacity: 1;
+  color: white;
+  font-weight: 700;
+}
+}
 
 
 @media screen and (min-width: 768px) {      /* A partir de 768px */
@@ -367,7 +383,7 @@ ul li:hover .sub-menu {
   opacity: 1;
 }
 .project2 {
-  background-image: url();
+  background-image: url(../images/project2/p.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
