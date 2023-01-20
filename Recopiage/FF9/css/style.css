@@ -287,3 +287,51 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+/* == Retour au portfolio == */
+.portfolio {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+
+}
+button {
+    padding: 0em;
+    /* width: 2.7em; */
+    /* height: 1.4em; */
+    /* background-color: #212121; */
+    /* border: 0.08em solid #fff; */
+    /* border-radius: 0.3em; */
+    /* font-size: 12px; */
+  }
+  
+  button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 4.5em;
+    height: 3em;
+    background-color: #07184C;
+    border-radius: 0.2em;
+    font-size: 15px;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  button:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  button:not(hover) {
+    transition: all 1s;
+  }
+  
+  button a:visited {
+    color: #fff;
+    text-decoration: none;
+  }

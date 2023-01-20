@@ -15,7 +15,7 @@ function closeNav() {
 // == == //
 
 // == Menu switch dark mode == //
-
+// large mode //
 document.getElementById("switchTheme").addEventListener("change", function() {
   if (document.getElementById("switchTheme").checked == false) {
     document.documentElement.setAttribute("style", "background-color: #121212;");
@@ -26,7 +26,18 @@ document.getElementById("switchTheme").addEventListener("change", function() {
     document.getElementsByTagName("body")[0].setAttribute("style", "color: black;");
   }
 });
+document.getElementById("switchTheme").addEventListener("change", function() {
+  if (document.getElementById("switchTheme").checked == false) {
+    document.documentElement.setAttribute("style", "background-color: #121212;");
+    document.getElementsByTagName("nav")[0].setAttribute("style", "color: #c7c7c7;");
 
+  } else {
+    document.documentElement.setAttribute("style", "background-color: white;");
+    document.getElementsByTagName("nav")[0].setAttribute("style", "color: black;");
+  }
+});
+
+// small mode //
 document.getElementById("switchTheme2").addEventListener("change", function() {
   if (document.getElementById("switchTheme2").checked == false) {
     document.documentElement.setAttribute("style", "background-color: #121212;");
