@@ -50,56 +50,91 @@ box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et coule
 
               /* == Menu burger == */
 /* = Menu burger = */
-  .sidenav {
-    height: 100vh;                      /* Prend toute la hauteur */
-    width: 100vw;                       /* Prend toute la largeur */
-    position: fixed;                    /* Menu fixed */
-    z-index: 2;                         /* Menu par dessus tout le reste */
-    top: 0;                             /* Menu tout en haut */
-    left: -150vw;                       /* Menu caché par défaut */
-    background-color: #e8e8e8;        important; /* Changer la couleur quand elle sera trouvé */ 
-    padding-top: 6rem;                   /* 5% de padding par rapport au top */
-    transition: left 1.5s ease-out;     /* Transition de 1.5s avec ralentissement à la fin */
+/* = Position du menu ouvert = */
+.sidenav.active {
+  left: 0;
 }
-  /* = position centré des titres = */
-  .sidenav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
+/* = Bouton de fermeture = */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 8%;
+  font-size: 4rem;
 }
-  /* = Liens du menu burger = */
-  .sidenav a {
-    padding: .5rem .5rem .5rem 2rem;
-    font-size: 2rem;
-    color: #cc0808;                   important; /* Changer la couleur quand elle sera trouvé */
-    display: block;
-    transition: 1.5s 1.5s;                     /* Apparition du menu en 1sec */
-}
-  .sidenav a:hover {
-    color: #111;
-}
-  /* = Position du menu ouvert = */
-  .sidenav.active {
-    left: 0;
-}
-  /* = Bouton de fermeture = */
-  .sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 8%;
-    font-size: 4rem;
-}
-  /* = Apparence du bouton burger = */
-  .burger-icon span {
-    display: block;
-    width: 2.5rem;
-    height: .4rem;
-    background-color: #87e7e1;
-    margin: 10% 1%;
+/* = Apparence du bouton burger = */
+.burger-icon span {
+  display: block;
+  width: 2.5rem;
+  height: .4rem;
+  background-color: #87e7e1;
+  margin: 10% 1%;
 }
 
-/* == Menu déroulant == */
+.sidenav {
+  height: 100vh;                      /* Prend toute la hauteur */
+  width: 100vw;                       /* Prend toute la largeur */
+  position: fixed;                    /* Menu fixed */
+  z-index: 2;                         /* Menu par dessus tout le reste */
+  top: 0;                             /* Menu tout en haut */
+  left: -150vw;                       /* Menu caché par défaut */
+  background-color: #e8e8e8;        important; /* Changer la couleur quand elle sera trouvé */ 
+  padding-top: 6rem;                   /* 5% de padding par rapport au top */
+  transition: left 1.5s ease-out;     /* Transition de 1.5s avec ralentissement à la fin */
+}
+/* = position centré des titres = */
+.sidenav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+/* = Liens du menu burger = */
+.sidenav a {
+  padding: .5rem .5rem .5rem 2rem;
+  font-size: 2rem;
+  color: #cc0808;                   important; /* Changer la couleur quand elle sera trouvé */
+  display: block;
+  transition: 1s;                                   /* Apparition des liens en 1sec */
+}
+/* Reaction au hover */
+.sidenav a:hover {
+  color: #111;
+}
+/* Placement de ▼ à la fin des menus */
+.header-small__menu > a::after {
+  content: " ▼";
+  font-size: 1.5rem;
+}
+/* Cacher les sous menus par défaut */
+ul > li .sub-menu {
+  display: none;                                    /* Cache les sous menus par défaut */
+}
+
+/* position et placement de la fenetre sous menu */
+ul li:hover .sub-menu {     
+  display: flex;                                   /* Les sous-menus apparaissent au hover sur le lien */
+}
+/* placement des sous menu */
+.header-small__sub-menu li {
+  display: flex;                                    /* en colonne de 33% pour toute la largeur*/
+  justify-content: space-around;
+}
+/* style des liens de sous menu */
+.header-small__sub-menu a {
+  font-size: 1rem;
+}
+/* action quand hover sur fenetre de sous menu */
+.header-small__sub-menu a:hover {
+  background-color: #fff000;
+}
+
+
+
+
+
+
+
+/* == Menu déroulant large == */
 /* Liens de la barre de menu*/
   nav a {
     display: block;                                     /* Fait en sorte que les liens li du sous menu soient en bloc*/
@@ -117,7 +152,6 @@ box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et coule
   content: " ▼";
   font-size: 1rem;
 }
-
 
 /* Cacher les sous menus par défaut */
 .header-large__sub-menu {
@@ -152,14 +186,13 @@ nav > ul li:hover .header-large__sub-menu {
   }
 
 
+/* == Menu déroulant small == */
+/* Liens de la barre de menu*/
 
 
- nav ul li {
-  /* float: left; */
-  /* width: 25%; */
-  /* text-align: center; */
-  /* position: relative; */
- }
+
+
+
 
 
 
