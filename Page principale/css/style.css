@@ -58,7 +58,7 @@
   left: -150vw;                       /* Menu caché par défaut */
   background-color: #333;           /* Couleur de fond */ 
   padding-top: 6rem;                   /* 5% de padding par rapport au top */
-  transition: left 1.5s ease-out;     /* Transition de 1.5s avec ralentissement à la fin */
+  transition: left .7s ease-out;     /* Transition de 0.7s avec ralentissement à la fin */
 }
 /* position centré des titres */
 .sidenav ul {
@@ -146,7 +146,7 @@ body {
     background: linear-gradient(145deg, #969595, #b3b3b3);
     box-shadow:  20px 20px 60px #6a6a6a,
                 -20px -20px 60px #909090;
-    color: #eaeaea;
+    /* color: #eaeaea; */
 }
 /* Gestion des articles du menu small */
   .small-main__articles {
