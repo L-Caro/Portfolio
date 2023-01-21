@@ -72,7 +72,7 @@
   margin-bottom: 2rem;
   padding: .5rem .5rem .5rem 2rem;
   font-size: 2rem;
-  color: #eaeaea;                   important; /* Changer la couleur quand elle sera trouvé */
+  color: #eaeaea;                   /* Changer la couleur quand elle sera trouvé */
   text-shadow: 1px 1px 10px #eaeaea;
   opacity: .8;
   display: block;
@@ -131,6 +131,24 @@ body {
 /* ================================ */
 
 /* == Main == */
+/* Présentation */
+.main__presentation-img {
+  display: block;
+  margin: 2rem auto;
+  width: 25%;
+  max-width: 10rem;
+}
+.main__presentation-text {
+    width: 90%;
+    margin: 2rem;
+    color: #333333;
+    padding: 2rem;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #969595, #b3b3b3);
+    box-shadow:  20px 20px 60px #6a6a6a,
+                -20px -20px 60px #909090;
+    color: #eaeaea;
+}
 /* Gestion des articles du menu small */
   .small-main__articles {
     display: flex;
@@ -244,12 +262,12 @@ body {
 }
   .header__Title-and-menu {
     width: 86vw;
-  }
+}
 /* Titre */
   .header-large h1 {
     padding: 1.5rem 0 0 0;
     letter-spacing: .5em;
-  }
+}
   .header-large h1 a {
     font-size: 1.2rem;
     font-weight: 700;
@@ -257,16 +275,16 @@ body {
   .header-large h1 a:visited {
     text-decoration: none;
     color: inherit;
-  }
+}
 /* Réseaux sociaux */
   .header-large__logos {
     max-width: 35px;
-  }
+}
   .header-large__logos img {
     display: block;
     padding: .1rem 0;
     height: 100%;
-  } 
+} 
 /* Menus du header */
   .header-large__menus {
     display: flex;
@@ -366,12 +384,31 @@ nav a {
   .header-large__sub-menu2 a:hover,
   .header-large__sub-menu3 a:hover,
   .header-large__sub-menu4 a:hover {
-    background-color: #fff000;          /* A supprimer quand les projets auront des photos*/ important !;
+    background-color: #fff000;          /* A supprimer quand les projets auront des photos*/
 }
 /* ================================ */
 /* ================================ */
 
 /* == Main == */
+/* Présentation */
+.main__presentation-img {
+  display: block;
+  margin: 2rem auto;
+  width: 25%;
+  max-width: 10rem;
+}
+.main__presentation-text {
+    width: 70%;
+    margin: 2rem auto;
+    color: #333333;
+    padding: 2rem;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #969595, #b3b3b3);
+    box-shadow:  20px 20px 60px #6a6a6a,
+                -20px -20px 60px #909090;
+    color: #eaeaea;
+}
+
 /* Projets */
 /* Legende des articles */
   .figcaption {
@@ -384,7 +421,7 @@ nav a {
     opacity: .7;
     pointer-events: none;
     overflow: auto;
-  }
+}
 /* Articles */
 /* ------------------------------- */
   .project1 {
@@ -517,4 +554,5 @@ opacity: .5
 }
 .project12:hover {
 opacity: 1;
+}
 }
