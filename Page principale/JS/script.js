@@ -22,7 +22,7 @@ document.getElementById("switchTheme").addEventListener("change", function() {
     document.getElementsByTagName("body")[0].setAttribute("style", "color: #c7c7c7;");
 
   } else {
-    document.documentElement.setAttribute("style", "background-color: #C7C7C7;");
+    document.documentElement.setAttribute("style", "background-color: #FFFFFF;");
     document.getElementsByTagName("body")[0].setAttribute("style", "color: #7D7D7D;");
   }
 });
@@ -32,7 +32,7 @@ document.getElementById("switchTheme").addEventListener("change", function() {
     document.getElementsByTagName("nav")[0].setAttribute("style", "color: #c7c7c7;");
 
   } else {
-    document.documentElement.setAttribute("style", "background-color: #C7C7C7;");
+    document.documentElement.setAttribute("style", "background-color: #FFFFFF;");
     document.getElementsByTagName("nav")[0].setAttribute("style", "color: #7D7D7D;");
   }
 });
