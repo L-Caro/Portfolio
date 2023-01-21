@@ -1,67 +1,43 @@
-/* == Menu dark mode == */
-/* Fond du switch */
-.switch {
-font-size: 1rem;                                                  /* Hauteur du switch */
-position: relative;                                               /* Le laisse ou le display flex l'a prévu */
-width: 4.5em;
-height: 2.5em;
+/* == Body == */
+  body {
+  font-family: 'JetBrains Mono', monospace;
 }
-/* cacher checkbox de base */
-.switch input {
-opacity: 0;
-width: 0;
-height: 0;
+/* ============================ */
+/* ============================ */
+/* == Header == */
+  header {
+    border-bottom: 2px solid #eaeaea;
+    padding: 0 2rem;
 }
-/* Le switch */
-.slider {
-position: absolute;
-cursor: pointer;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color:  #212121;                                   /* Fond du switch en mode sombre*/
-transition: 2s;                                                 /* Temps pour que le fond change de couleur */
-border-radius: 30px;
-box-shadow: 0px 0px 10px 4px #EAEAEA;                         /* Effet d'ombrage en mode sombre */
+/* Titre */
+  header h1 {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
 }
-/* Switch position gauche (sombre) */
-.slider:before {
-position: absolute;                                             /* Position absolue de son parent, le switch */
-content: "";
-height: 1.8em;
-width: 1.8em;
-border-radius: 50%;
-left: 10%;                                                      /* Position dans le parent, le switch */
-bottom: 15%;
-box-shadow: inset 8px -4px 0px 0px #fff000;                   /* Dessin et couleur de la lune en position sombre */
-background-color: #212121;                                    /* Couleur de la partie non lune */
-transition: .5s;                                                /* Temps pour changer de coté */
+/* == main == */
+  main {
+  height: 100vh;
+}
+/* ================================ */
+/* ================================ */
+/* ================================ */
+/* ================================ */
 
-}
-input:checked + .slider {
-box-shadow: 0px 0px 10px 4px #777777;                         /* Effet d'ombrage en mode clair */
-background-color: rgb(240, 240, 240);                         /* Fond du switch en mode clair */
-}  
-input:checked + .slider:before {
-transform: translateX(100%);                                    /* Active la translation quand bouton check */
-box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et couleur de la lune en position clair */
-} 
-
-              /* == Menu burger == */
-/* = Menu burger = */
-/* = Position du menu ouvert = */
+@media screen and (max-width: 767px) {      /* Jusqu'à 768px */
+/* == Menu burger == */
+/* Position du menu ouvert */
 .sidenav.active {
   left: 0;
 }
-/* = Bouton de fermeture = */
+/* Bouton de fermeture */
 .sidenav .close {
   position: absolute;
   top: 0;
   right: 8%;
   font-size: 4rem;
 }
-/* = Apparence du bouton burger = */
+/* Apparence du bouton burger */
 .burger-icon span {
   display: block;
   width: 2.5rem;
@@ -69,8 +45,10 @@ box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et coule
   background-color: #87e7e1;
   margin: 10% 1%;
 }
+/* ================================ */
+/* ================================ */
 
-
+/* == Menu latéral == */
 .sidenav {
   height: 100vh;                      /* Prend toute la hauteur */
   width: 100vw;                       /* Prend toute la largeur */
@@ -78,97 +56,258 @@ box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et coule
   z-index: 2;                         /* Menu par dessus tout le reste */
   top: 0;                             /* Menu tout en haut */
   left: -150vw;                       /* Menu caché par défaut */
-  background-color: #333;        important; /* Changer la couleur quand elle sera trouvé */ 
+  background-color: #333;           /* Couleur de fond */ 
   padding-top: 6rem;                   /* 5% de padding par rapport au top */
   transition: left 1.5s ease-out;     /* Transition de 1.5s avec ralentissement à la fin */
 }
-/* = position centré des titres = */
+/* position centré des titres */
 .sidenav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style-type: none;
 }
-/* = Liens du menu burger = */
+/* Liens du menu latéral */
 .sidenav a {
+  margin-bottom: 2rem;
   padding: .5rem .5rem .5rem 2rem;
   font-size: 2rem;
   color: #eaeaea;                   important; /* Changer la couleur quand elle sera trouvé */
-  text-shadow: 0px 0px 4px #333;
-  opacity: .5;
+  text-shadow: 1px 1px 10px #eaeaea;
+  opacity: .8;
   display: block;
   transition: 1s;                                   /* Apparition des liens en 1sec */
 }
-/* Reaction au hover */
-.sidenav a:hover {
-  color: #111;
+/* Effet d'ombrage autour des lien de menu seulement */
+ul .header-small__menu > a {
+  box-shadow: 0px 0px 10px 4px #EAEAEA;
 }
-/* Placement de ▼ à la fin des menus */
-.header-small__menu > a::after {
-  content: " ▼";
-  font-size: 1.5rem;
+/* ================================ */
+/* ================================ */
+
+/* == Header == */
+.header-large {
+  display: none;                            /* Masquer le menu large */
 }
-/* Cacher les sous menus par défaut */
-ul > li .sub-menu {
-  display: none;                                    /* Cache les sous menus par défaut */
+.header-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-/* position et placement de la fenetre sous menu */
-ul li:hover .sub-menu {     
-  display: flex;                               /* Les sous-menus apparaissent au hover sur le lien */
-}
-/* placement des sous menu */
-.header-small__sub-menu li {
-  display: flex;                                    /* en colonne de 33% pour toute la largeur*/
-  justify-content: space-around;
-}
-/* style des liens de sous menu */
-.header-small__sub-menu a {
-  font-size: 1rem;
-}
-/* action quand hover sur fenetre de sous menu */
-.header-small__sub-menu a:hover {
+/* Titre */
+.header-small h1 {  
+  padding: 2rem 0;
+  width: 50%;
   color: #eaeaea;
-  text-shadow: 0px 0px 4px #333;
+}
+header h1 a {
+  text-decoration: none;
   font-weight: 700;
-  font-size: 1.5rem;
-  background-color: #fff000;
+  color: #eaeaea;
+}
+/* Logos réseaux sociaux */
+.header-small__logos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.header-small__logos img {
+  display: block;
+  width: 100%;
+  max-width: 2.5rem;
+}
+/* ================================ */
+/* ================================ */
+
+/* == Body == */
+body {
+  background-image: url(../images/fond-ecran.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  opacity: .8;
+}
+/* ================================ */
+/* ================================ */
+
+/* == Main == */
+/* Gestion des articles du menu small */
+  .small-main__articles {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+/* Gestion de l'article à l'unité */
+  .small-main__article {
+    width: 90%;
+    margin: 2rem;
+    color: #333333;
+    padding: 2rem;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #969595, #b3b3b3);
+    box-shadow:  20px 20px 60px #6a6a6a,
+                -20px -20px 60px #909090;
 }
 
+/* Lien des articles */
+  .small-main__article a {
+    display: block;
+    width: 35%;
+    max-width: 9rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);                 
+    text-shadow: 1px 1px 10px #eaeaea;
+    box-shadow: 0px 0px 10px 4px #000000;
+    font-weight: 700;
+    text-align: center;
+    padding: .3rem 0 .3rem 0;
+    margin: 0 auto;
+}
 
+/* Texte sur les articles */
+  .small-main__article figcaption {
+    text-align: justify;
+    padding-top: 2rem;
+}
+}
+/* ================================ */
+/* ================================ */
+/* ================================ */
+/* ================================ */
+@media screen and (min-width: 768px) {      /* A partir de 768px */
+/* == menu burger == */
+  .header-small {
+    display: none;
+}
+/* ================================ */
+/* ================================ */
+/* == Menu dark mode == */
+/* Fond du switch */
+  .switch {
+    font-size: 1rem;                                                  /* Hauteur du switch */
+    position: relative;                                               /* Le laisse ou le display flex l'a prévu */
+    width: 5em;
+    height: 2.5em;
+}
+  /* cacher checkbox de base */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  /* Le switch */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  #212121;                                   /* Fond du switch en mode sombre*/
+    transition: 2s;                                                 /* Temps pour que le fond change de couleur */
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 4px #EAEAEA;                         /* Effet d'ombrage en mode sombre */
+}
+  /* Switch position gauche (sombre) */
+  .slider:before {
+    position: absolute;                                             /* Position absolue de son parent, le switch */
+    content: "";
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: 50%;
+    left: 10%;                                                      /* Position dans le parent, le switch */
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;                   /* Dessin et couleur de la lune en position sombre */
+    background-color: #212121;                                    /* Couleur de la partie non lune */
+    transition: .5s;                                                /* Temps pour changer de coté */
+}
+  input:checked + .slider {
+    box-shadow: 0px 0px 10px 4px #777777;                         /* Effet d'ombrage en mode clair */
+    background-color: rgb(240, 240, 240);                         /* Fond du switch en mode clair */
+}  
+  input:checked + .slider:before {
+    transform: translateX(100%);                                    /* Active la translation quand bouton check */
+    box-shadow: inset 15px -4px 0px 15px #fff000;                 /* Dessin et couleur de la lune en position clair */
+}
+/* ================================ */
+/* ================================ */
 
+/* == header == */
+.header-large {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__titles {
+  display: flex;
+  justify-content: space-between;
+}
+  .header__Title-and-menu {
+    width: 86vw;
+  }
+/* Titre */
+  .header-large h1 {
+    padding: 1.5rem 0 0 0;
+    letter-spacing: .5em;
+  }
+  .header-large h1 a {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+  .header-large h1 a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+/* Réseaux sociaux */
+  .header-large__logos {
+    max-width: 35px;
+  }
+  .header-large__logos img {
+    display: block;
+    padding: .1rem 0;
+    height: 100%;
+  } 
+/* Menus du header */
+  .header-large__menus {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+  .header-large ul {
+    list-style-type: none;
+}
+/* ================================ */
 /* == Menu déroulant large == */
 /* Liens de la barre de menu sur header */
-  nav a {
-    display: block;                                     /* Fait en sorte que les liens li du sous menu soient en bloc*/
-    text-decoration: none;
-    color: #87e7e1;
-    font-weight: 700;
-    text-shadow: 0px 0px 4px #333;
-  }
-
-/* couleur liens sous menu en hover */
- .header-large__sub-menu1 a,
- .header-large__sub-menu2 a,
- .header-large__sub-menu3 a,
- .header-large__sub-menu4 a {
+nav a {
+  display: block;                                     /* Fait en sorte que les liens li du sous menu soient en bloc*/
+  text-decoration: none;
+  color: #87e7e1;
+  font-weight: 700;
+  text-shadow: 0px 0px 4px #333;
+}
+/* couleur liens sous menu */
+  .header-large__sub-menu1 a,
+  .header-large__sub-menu2 a,
+  .header-large__sub-menu3 a,
+  .header-large__sub-menu4 a {
     color: #EAEAEA;
     text-shadow: 0px 0px 4px rgb(87, 86, 86);
-  }
- /* couleur liens sous menu en hover */
- .header-large__sub-menu1 a:hover,
- .header-large__sub-menu2 a:hover,
- .header-large__sub-menu3 a:hover,
- .header-large__sub-menu4 a:hover {
+}
+/* couleur liens sous menu en hover */
+  .header-large__sub-menu1 a:hover,
+  .header-large__sub-menu2 a:hover,
+  .header-large__sub-menu3 a:hover,
+  .header-large__sub-menu4 a:hover {
     color: #EAEAEA;
     text-shadow: 0px 0px 4px #333;
     font-weight: 700;
-  }
+}
 /* Placement de ▼ à la fin des menus */
   .header-large__menu > a::after {
     content: " ▼";
     font-size: 1rem;
 }
-
 /* Cacher les sous menus par défaut */
   .header-large__sub-menu1, 
   .header-large__sub-menu2, 
@@ -176,7 +315,6 @@ ul li:hover .sub-menu {
   .header-large__sub-menu4 {
     display: none;                                    /* Cache les sous menus par défaut */
 }
-
 /* position et placement de la fenetre sous menu */
   nav > ul li:hover .header-large__sub-menu1,
   nav > ul li:hover .header-large__sub-menu2,
@@ -190,187 +328,52 @@ ul li:hover .sub-menu {
     height: 90vh;                                     /* Hauteur des sous menus (jusqu'en bas) */
 }
 /* placement des sous menu */
-.header-large__sub-menu1 li{
-  display: flex;                                    /* en colonne de 33% pour toute la largeur*/
-  justify-content: space-around;
-  position: relative;
-  width: 33%;
+  .header-large__sub-menu1 li{
+    display: flex;                                    /* en colonne de 33% pour toute la largeur*/
+    justify-content: space-around;
+    position: relative;
+    width: 33%;
 }
-.header-large__sub-menu2 li {
-  display: flex;                                    /* en colonne de 33% pour toute la largeur*/
-  justify-content: space-around;
-  position: relative;
-  width: 33%;
+  .header-large__sub-menu2 li {
+    display: flex;                                    /* en colonne de 33% pour toute la largeur*/
+    justify-content: space-around;
+    position: relative;
+    width: 33%;
 }
-.header-large__sub-menu3 li {
-  display: flex;                                    /* en colonne de 33% pour toute la largeur*/
-  justify-content: space-around;
-  position: relative;
-  width: 33%;
+  .header-large__sub-menu3 li {
+    display: flex;                                    /* en colonne de 33% pour toute la largeur*/
+    justify-content: space-around;
+    position: relative;
+    width: 33%;
 }
-.header-large__sub-menu4 li {
-  display: flex;                                    /* en colonne de 33% pour toute la largeur*/
-  justify-content: space-around;
-  position: relative;
-  width: 33%;
+  .header-large__sub-menu4 li {
+    display: flex;                                    /* en colonne de 33% pour toute la largeur*/
+    justify-content: space-around;
+    position: relative;
+    width: 33%;
 }
 /* placement du titre dans chaque sous menu */
   .header-large__sub-menu1 a,
   .header-large__sub-menu2 a,
   .header-large__sub-menu3 a,
   .header-large__sub-menu4 a {
-    padding: 1rem;                                  /* Largeur à 100% avec leger padding */
-    width: 100%;
-    text-align: center;
-  }
+      padding: 1rem;                                  /* Largeur à 100% avec leger padding */
+      width: 100%;
+      text-align: center;
+}
 /* action quand hover sur fenetre de sous menu */
   .header-large__sub-menu1 a:hover,
   .header-large__sub-menu2 a:hover,
   .header-large__sub-menu3 a:hover,
   .header-large__sub-menu4 a:hover {
     background-color: #fff000;          /* A supprimer quand les projets auront des photos*/ important !;
-  }
-  
-
-
-
-
-
-
-
-
-
-/* == Body == */
-  body {
-  font-family: 'JetBrains Mono', monospace;
 }
-/* == Header == */
-  header {
-    border-bottom: 1px solid #f1f1f1;
-    padding: 0 2rem;
-}
-  header h1 {
-  font-weight: 800;
-  font-size: 1rem;
-  text-align: center;
-}
+/* ================================ */
+/* ================================ */
 
-.header-small {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-small h1 {  
-  padding: 2rem 0;
-  width: 50%;
-}
-
-  .header-large {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  .header__Title-and-menu {
-    width: 86vw;
-  }
-
-  .header-large h1 {
-    letter-spacing: .5em;
-    padding: 1.5rem 0 0 0;
-}
-  .header-large__logos {
-    max-width: 35px;
-  }
-  .header-large__logos img {
-    display: block;
-    padding: .1rem 0;
-    height: 100%;
-  } 
-
-  .header-large__menus {
-    display: flex;
-    justify-content: space-around;
-    padding: 1.5rem 0;
-}
-  .header-large ul {
-    list-style-type: none;
-}
-
-
-
-/* == main == */
-  main {
-  background-image: url(../images/fond-ecran.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  opacity: .5;
-  pointer-events: none;
-}
-
-  p {
-  text-align: justify;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 767px) {      /* Jusqu'à 768px */
-  .header-large {
-    display: none;
-  }
-
-  /* Projets */  
-  .project1 {
-    background-image: url(../images/project1/ff9.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    opacity: .5
-}
-  .project1:hover {
-    opacity: 1;
-    color: white;
-    font-weight: 700;
-}
-.project2 {
-  background-image: url(../images/project2/p.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  opacity: .5
-}
-.project2:hover {
-  opacity: 1;
-  color: white;
-  font-weight: 700;
-}
-}
-
-
-@media screen and (min-width: 768px) {      /* A partir de 768px */
-
-  /* == menu burger == */
-  .header-small {
-    display: none;
-}
-}
-
-  /* Projets */
-
+/* == Main == */
+/* Projets */
+/* Legende des articles */
   .figcaption {
     position: absolute;
     top: 60%;
@@ -382,6 +385,8 @@ ul li:hover .sub-menu {
     pointer-events: none;
     overflow: auto;
   }
+/* Articles */
+/* ------------------------------- */
   .project1 {
   background-image: url(../images/project1/ff9.jpg);
   background-repeat: no-repeat;
@@ -389,9 +394,10 @@ ul li:hover .sub-menu {
   background-position: top center;
   opacity: .5;
 }
-  .project1:hover {
+.project1:hover {
   opacity: 1;
 }
+/* ------------------------------- */
 .project2 {
   background-image: url(../images/project2/p.jpg);
   background-repeat: no-repeat;
@@ -399,14 +405,116 @@ ul li:hover .sub-menu {
   background-position: top center;
   opacity: .5
 }
-  .project2:hover {
+.project2:hover {
   opacity: 1;
 }
-
-
-
-  /* == header == */
-.header__titles {
-  display: flex;
-  justify-content: space-between;
+/* ------------------------------- */
+  .project3 {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  opacity: .5;
+}
+.project3:hover {
+  opacity: 1;
+}
+/* ------------------------------- */
+.project4 {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  opacity: .5
+}
+.project4:hover {
+  opacity: 1;
+}
+/* ------------------------------- */
+.project5 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5;
+}
+.project5:hover {
+opacity: 1;
+}
+/* ------------------------------- */
+.project6 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5
+}
+.project6:hover {
+opacity: 1;
+}
+/* ------------------------------- */
+.project7 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5;
+}
+.project7:hover {
+opacity: 1;
+}
+/* ------------------------------- */
+.project8 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5
+}
+.project8:hover {
+opacity: 1;
+}
+/* ------------------------------- */
+.project9 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5;
+}
+.project9:hover {
+opacity: 1;
+}
+/* ------------------------------- */
+.project10 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5
+}
+.project10:hover {
+opacity: 1;
+}
+/* ------------------------------- */
+.project11 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5;
+}
+.project11:hover {
+opacity: 1;
+}
+/* ------------------------------- */
+.project12 {
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+opacity: .5
+}
+.project12:hover {
+opacity: 1;
 }
