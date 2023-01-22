@@ -57,7 +57,7 @@
   top: 0;                             /* Menu tout en haut */
   left: -150vw;                       /* Menu caché par défaut */
   background-color: #333;           /* Couleur de fond */ 
-  padding-top: 6rem;                   /* 5% de padding par rapport au top */
+  padding-top: 11rem;                   /* 5% de padding par rapport au top */
   transition: left .7s ease-out;     /* Transition de 0.7s avec ralentissement à la fin */
 }
 /* position centré des titres */
@@ -70,7 +70,7 @@
 /* Liens du menu latéral */
 .sidenav a {
   margin-bottom: 2rem;
-  padding: .5rem .5rem .5rem 2rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
   color: #eaeaea;                   /* Changer la couleur quand elle sera trouvé */
   text-shadow: 1px 1px 10px #eaeaea;
@@ -157,7 +157,7 @@ body {
 /* Gestion de l'article à l'unité */
   .small-main__article {
     width: 90%;
-    margin: 2rem;
+    margin: 2rem auto;
     color: #333333;
     padding: 2rem;
     border-radius: 50px;
