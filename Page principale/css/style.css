@@ -323,7 +323,7 @@ body {
     font-weight: 700;
 }
 /* Placement de ▼ à la fin des menus */
-.header-large__menu > a::after {
+.menu-arrow > a::after {
   content: " ▼";
   font-size: 1rem;
 }
